@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { usersJSON } from "../data";
+import "../index.css";
 
 export default class Table extends Component {
   constructor() {
@@ -53,6 +54,7 @@ export default class Table extends Component {
   };
   sortByName = () => {
     let sortedProductsAsc;
+    // eslint-disable-next-line array-callback-return
     sortedProductsAsc = this.state.contacts.sort((a, b) => {
       if (a.name.toLowerCase() < b.name.toLowerCase()) return -1;
       if (a.name.toLowerCase() > b.name.toLowerCase()) return 1;

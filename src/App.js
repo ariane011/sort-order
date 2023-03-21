@@ -4,7 +4,7 @@ import Name from "./components/Name";
 import Points from "./components/Points";
 import Rank from "./components/Rank";
 import Table from "./components/Table";
-
+import "./index.css";
 export default class App extends Component {
   constructor() {
     super();

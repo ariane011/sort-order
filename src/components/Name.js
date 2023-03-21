@@ -1,9 +1,9 @@
 import React from "react";
 
-const Name = (props) => {
+const Name = (props) => (
   <button onClick={props.sortedBy} className="btn btn-primary name" name="name">
     Name
-  </button>;
-};
+  </button>
+);
 
 export default Name;
